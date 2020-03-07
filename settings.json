@@ -1,0 +1,21 @@
+{
+  "Servers": [
+    {
+      "serverName": "Server 1",
+      "connectionString": "строка подключения",
+      "serverSpace": "размер в ГБ"
+
+    },
+    {
+      "serverName": "Server 2",
+      "connectionString": "строка подключения",
+      "serverSpace": "размер в ГБ"
+
+    }
+  ],
+
+  "GoogleAccount": {
+    "ClientId": "Ваш CID от Google Sheets",
+    "ClientSecret": "Ваш Secret key"
+  }
+}
