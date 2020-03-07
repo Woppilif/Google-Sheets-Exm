@@ -36,11 +36,11 @@ namespace GoogleSheets.Models
                 string[] sizeString = item.Size.Split(' ');
                 if (sizeString[1] == "kB")
                 {
-                    size += int.Parse(sizeString[0]) / (1024 * 1024 * 1024);
+                    size += double.Parse(sizeString[0]) / (1024 * 1024 * 1024);
                 }
                 else if (sizeString[1] == "MB")
                 {
-                    size += int.Parse(sizeString[0]) / 1024;
+                    size += double.Parse(sizeString[0]) / 1024;
                 }
                 else if (sizeString[1] == "GB")
                 {

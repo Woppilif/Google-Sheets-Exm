@@ -86,7 +86,7 @@ namespace Controllers
                 List<object> schemaInfo = new List<object>();
                 schemaInfo.Add(item.serverName);
                 schemaInfo.Add("Свободно");
-                schemaInfo.Add($"{item.serverSpace - item.CurrentSize()}");
+                schemaInfo.Add($"{Math.Round(item.serverSpace - item.CurrentSize(), 2)}");
                 schemaInfo.Add(DateTime.Now.ToString("D"));
                 requestBody.Values.Add(schemaInfo);
                 var appendRequest = service.Spreadsheets.Values.Append(requestBody, sheetEntities.SpreadsheetId, range);
